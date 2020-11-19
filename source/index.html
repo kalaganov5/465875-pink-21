@@ -2,30 +2,28 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Pink - Взгляните на жизнь иначе!</title>
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__wrap">
-        <a class="page-header__logo">
+        <a class="page-header__logo" aria-label="Приложение Pink">
           <img src='https://dummyimage.com/74x23.gif' alt="Приложение Pink"/>
         </a>
-        <button class="page-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+        <button class="page-header__toggle" type="button" title="Открыть меню"></button>
         <nav class="page-header__nav">
           <ul class="page-header__list nav-list">
             <li class="nav-list__item">
               <a class="nav-list__link nav-list__link--active">Главная</a>
             </li>
             <li class="nav-list__item">
-              <a href="catalog.html" class="nav-list__link">Фотографии</a>
+              <a class="nav-list__link" href="catalog.html">Фотографии</a>
             </li>
             <li class="nav-list__item">
-              <a href="contact.html" class="nav-list__link">Конкурс</a>
+              <a class="nav-list__link" href="form.html">Конкурс</a>
             </li>
             <li class="nav-list__item">
-              <a href="https://htmlacademy.ru/" class="nav-list__link">HTML Academy</a>
+              <a class="nav-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -35,24 +33,23 @@
       <section class="get-app">
         <h1 class="visually-hidden">Приложение Pink</h1>
         <b class="get-app__title title">Взгляните на жизнь иначе!</b>
-        <img class="get-app__image" src="https://dummyimage.com/320x286.gif" width="320" height="286" alt="Приложение в смартфоне меняет мир в розовые тона">
         <div class="get-app__download app-download">
           <a href="https://www.apple.com/app-store/" class="app-download__link" target="_blank">Скачать приложение</a>
           <div class="app-download__store app-store">
             <ul class="app-store__list">
               <li class="app-store__item">
-                <a href="https://www.apple.com/app-store/" class="app-store__link app-store__link--app-store" target="_blank">
-                  <span class="visually-hidden">Скачать в App Store</span>
+                <a class="app-store__link app-store__link--app-store" href="https://www.apple.com/app-store/" target="_blank" title="Скачать в App Store">
+                  <img src='https://dummyimage.com/47x46.gif' alt="Магазин приложений Apple" width="47" height="56"/>
                 </a>
               </li>
               <li class="app-store__item">
-                <a href="https://play.google.com/store/" class="app-store__link app-store__link--play-market" target="_blank">
-                  <span class="visually-hidden">Скачать в Play Market</span>
+                <a class="app-store__link app-store__link--play-market" href="https://play.google.com/store/" target="_blank" title="Скачать в Play Market">
+                  <img src='https://dummyimage.com/47x46.gif' alt="Магазин приложений Google" width="47" height="56"/>
                 </a>
               </li>
               <li class="app-store__item">
-                <a href="https://www.microsoft.com/" class="app-store__link app-store__link--ms-store" target="_blank">
-                  <span class="visually-hidden">Скачать в MicroSoft Store</span>
+                <a class="app-store__link app-store__link--ms-store" href="https://www.microsoft.com/" target="_blank" title="Скачать в MicroSoft Store">
+                  <img src='https://dummyimage.com/47x46.gif' alt="Магазин приложений MicroSoft" width="47" height="56"/>
                 </a>
               </li>
             </ul>
@@ -85,7 +82,7 @@
         <div class="time__container container">
           <p class="time__title">Эффект на 24 часа!</p>
           <p class="time__desc">Британские ученые провели исследования и&nbsp;доказали, что положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
-          <a href="#" class="time__link">Узнать больше об исследовании</a>
+          <a class="time__link" href="#">Узнать больше об исследовании</a>
         </div>
       </div>
       <section class="review">
@@ -112,9 +109,9 @@
             </li>
           </ul>
           <div class="review__toggle">
-            <input type="radio" name="review__radio" class="review__radio" checked>
-            <input type="radio" name="review__radio" class="review__radio">
-            <input type="radio" name="review__radio" class="review__radio">
+            <input class="review__radio" type="radio" name="review__radio" checked>
+            <input class="review__radio" type="radio" name="review__radio">
+            <input class="review__radio" type="radio" name="review__radio">
           </div>
         </div>
       </section>
@@ -123,7 +120,7 @@
         <div class="price__container container">
           <table class="price__table table-price">
             <tr class="table-price__header">
-              <th colspan="2" class="table-price__row row-price">База<br><span class="row-price__small">1,99 USD</span></th>
+              <th class="table-price__row row-price" colspan="2">База<br><span class="row-price__small">1,99 USD</span></th>
               <th class="table-price__row table-price__row--main row-price">Cтандарт<br><span class="row-price__small">3,99 USD</span></th>
               <th class="table-price__row row-price">Анлим<br><span class="row-price__small">9,99 USD</span></th>
             </tr>
@@ -147,9 +144,9 @@
             </tr>
           </table>
           <div class="price__control">
-            <input type="radio" name="price__button" class="price__button">
-            <input type="radio" name="price__button" class="price__button" checked>
-            <input type="radio" name="price__button" class="price__button">
+            <input class="price__button" type="radio" name="price__button">
+            <input class="price__button" type="radio" name="price__button" checked>
+            <input class="price__button" type="radio" name="price__button">
           </div>
         </div>
       </section>
@@ -159,7 +156,7 @@
         <h2 class="footer__title title">Остались вопросы?<br>Свяжитесь с нами!</h2>
         <div class="footer__block">
           <p class="footer__subtitle">Звоните:</p>
-          <a href="tel:+78125556666" class="footer__link">+7 (812) 555-66-66</a>
+          <a class="footer__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
         </div>
         <div class="footer__block">
           <p class="footer__subtitle">Пишите:</p>
@@ -177,22 +174,25 @@
         <img src="https://dummyimage.com/145x40.gif" alt="Приложение Pink" width="145" height="40">
         <ul class="footer__social social-list">
           <li class="social-list__item">
-            <a href="#" class="social-list__link social-list__link--twitter">
+            <a class="social-list__link social-list__link--twitter" href="#" title="Наш Twitter">
               <span class="visually-hidden">Наш Twitter</span>
+              <img src='https://dummyimage.com/48x48.gif' width="48" height="48" alt=''/>
             </a>
           </li>
           <li class="social-list__item">
-            <a href="#" class="social-list__link social-list__link--facebook">
+            <a class="social-list__link social-list__link--facebook" href="#" title="Мы на Facebook">
               <span class="visually-hidden">Мы на Facebook</span>
+              <img src='https://dummyimage.com/48x48.gif' width="48" height="48" alt=''/>
             </a>
           </li>
           <li class="social-list__item">
-            <a href="#" class="social-list__link social-list__link--youtube">
+            <a class="social-list__link social-list__link--youtube" href="#" title="Мы в YouTube">
               <span class="visually-hidden">Мы в YouTube</span>
+              <img src='https://dummyimage.com/48x48.gif' width="48" height="48" alt=''/>
             </a>
           </li>
         </ul>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__developer" target="_blank">
+        <a class="footer__developer" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           Разработано
           <img src='https://dummyimage.com/27x34.gif' alt="HTML Academy"/>
         </a>
