@@ -2,13 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Форма заявки на конкурс</title>
+    <title>Pink - Форма заявки на конкурс</title>
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__wrap">
         <a class="page-header__logo" href="index.html" aria-label="Приложение Pink">
-          <img src='https://dummyimage.com/74x23.gif' alt="Приложение Pink"/>
+          <img src="https://dummyimage.com/74x23.gif" alt="Приложение Pink"/>
         </a>
         <button class="page-header__toggle" type="button" title="Открыть меню"></button>
         <nav class="page-header__nav">
@@ -37,13 +37,13 @@
           <fieldset class="form__full-name">
             <legend class="visually-hidden form__gr oup-title">Полное имя</legend>
             <label class="form__label" for="surname">Фамилия:
-              <input type="text" placeholder="Укажите фамилию *" id="surname" name="surname" required>
+              <input type="text" placeholder="Укажите фамилию *" id="surname" name="surname" inputmode="text" required>
             </label>
             <label class="form__label" for="name">Имя:
-              <input type="text" placeholder="Введите ваше имя *" id="name" name="name" required>
+              <input type="text" placeholder="Введите ваше имя *" id="name" name="name" inputmode="text" required>
             </label>
             <label class="form__label" for="patronymic">Отчество:
-              <input type="text" placeholder="Ну и отчество тоже" id="patronymic" name="patronymic">
+              <input type="text" placeholder="Ну и отчество тоже" id="patronymic" name="patronymic" inputmode="text">
             </label>
           </fieldset>
           <fieldset class="form__achievements">
@@ -70,9 +70,9 @@
           <fieldset class="form__contact">
             <legend class="form__group-title">Контактная информация</legend>
             <label class="form__label" for="phone">Номер телефона</label>
-            <input class="form__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста">
+            <input class="form__input" type="tel" name="phone" id="phone" placeholder="Номер, пожалуйста" inputmode="tel">
             <label class="form__label" for="email">Адрес почты</label>
-            <input class="form__input" type="email" name="email" id="email" placeholder="Введите почту *" required>
+            <input class="form__input" type="email" name="email" id="email" placeholder="Введите почту *" inputmode="email" required>
           </fieldset>
           <fieldset class="form__travel">
             <legend class="form__group-title">С каким приложением путешествовали?</legend>
@@ -88,7 +88,7 @@
           </fieldset>
           <fieldset class="form__comment comment">
             <label class="comment__title" for="comment-area">Опишите свои эмоции</label>
-            <textarea class="comment__area" name="comment-area" id="comment-area" rows="7" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            <textarea class="comment__area" name="comment" id="comment-area" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
           <button class="form__button button" type="submit">Отправить форму</button>
           <p class="form__desc">* — обязательные поля</p>
@@ -114,25 +114,25 @@
           <li class="social-list__item">
             <a class="social-list__link social-list__link--twitter" href="#" title="Наш Twitter">
               <span class="visually-hidden">Наш Twitter</span>
-              <img src='https://dummyimage.com/48x48.gif' width="48" height="48" alt=''/>
+              <img src="https://dummyimage.com/48x48.gif" width="48" height="48" alt=""/>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__link social-list__link--facebook" href="#" title="Мы на Facebook">
               <span class="visually-hidden">Мы на Facebook</span>
-              <img src='https://dummyimage.com/48x48.gif' width="48" height="48" alt=''/>
+              <img src="https://dummyimage.com/48x48.gif" width="48" height="48" alt=""/>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__link social-list__link--youtube" href="#" title="Мы в YouTube">
               <span class="visually-hidden">Мы в YouTube</span>
-              <img src='https://dummyimage.com/48x48.gif' width="48" height="48" alt=''/>
+              <img src="https://dummyimage.com/48x48.gif" width="48" height="48" alt=""/>
             </a>
           </li>
         </ul>
         <a class="footer__developer" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           Разработано
-          <img src='https://dummyimage.com/27x34.gif' alt="HTML Academy"/>
+          <img src="https://dummyimage.com/27x34.gif" alt="HTML Academy"/>
         </a>
       </div>
     </footer>
