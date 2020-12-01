@@ -2,9 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pink - Форма заявки на конкурс</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
     <header class="page-header">
       <div class="page-header__wrap">
         <a class="page-header__logo" href="index.html" aria-label="Приложение Pink">
@@ -31,19 +33,21 @@
     </header>
     <main class="page-main competition">
       <section class="competition__container container">
-        <h1 class="competition__title title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <div class="competition__header">
+          <h1 class="competition__title title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div>
         <p class="competition__subtitle">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span></p>
         <form class="competition__form form" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="form__full-name">
             <legend class="visually-hidden form__gr oup-title">Полное имя</legend>
             <label class="form__label" for="surname">Фамилия:
-              <input type="text" placeholder="Укажите фамилию *" id="surname" name="surname" inputmode="text" required>
+              <input class="form__input" type="text" placeholder="Укажите фамилию *" id="surname" name="surname" inputmode="text" required>
             </label>
             <label class="form__label" for="name">Имя:
-              <input type="text" placeholder="Введите ваше имя *" id="name" name="name" inputmode="text" required>
+              <input class="form__input" type="text" placeholder="Введите ваше имя *" id="name" name="name" inputmode="text" required>
             </label>
             <label class="form__label" for="patronymic">Отчество:
-              <input type="text" placeholder="Ну и отчество тоже" id="patronymic" name="patronymic" inputmode="text">
+              <input class="form__input" type="text" placeholder="Ну и отчество тоже" id="patronymic" name="patronymic" inputmode="text">
             </label>
           </fieldset>
           <fieldset class="form__achievements">
@@ -91,17 +95,17 @@
             <textarea class="comment__area" name="comment" id="comment-area" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
           <button class="form__button button" type="submit">Отправить форму</button>
-          <p class="form__desc">* — обязательные поля</p>
+          <p class="form__desc"><span class="form__required-mark">*</span> — обязательные поля</p>
           <aside class="form__alert popup-form">
             <div class="popup-form__send">
               <p class="popup-form__title">Ваша заявка отправлена</p>
               <p class="popup-form__desc">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-              <button class="popup-form__button button">Закрыть окно</button>
+              <button class="popup-form__button button" type="button">Закрыть окно</button>
             </div>
             <div class="popup-form__error">
               <p class="popup-form__title">Что-то пошло не так!</p>
               <p class="popup-form__desc">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-              <button class="popup-form__button button">Ок</button>
+              <button class="popup-form__button button" type="button">Ок</button>
             </div>
           </aside>
         </form>

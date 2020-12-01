@@ -2,12 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pink - Фотографии пользователей</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
     <header class="page-header">
       <div class="page-header__wrap">
-        <a class="page-header__logo" aria-label="Приложение Pink">
+        <a class="page-header__logo" href="index.html" aria-label="Приложение Pink">
           <img src="https://dummyimage.com/74x23.gif" alt="Приложение Pink"/>
         </a>
         <button class="page-header__toggle" type="button" title="Открыть меню"></button>
@@ -31,7 +33,9 @@
     </header>
     <main class="page-main">
       <section class="catalog">
-        <h1 class="catalog__title title">Фотографии пользователей</h1>
+        <div class="catalog__header">
+          <h1 class="catalog__title title">Фотографии пользователей</h1>
+        </div>
         <p class="catalog__subtitle">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <ul class="catalog__list card-list">
           <li class="card-list__item card-list__item--primary post">
@@ -134,8 +138,8 @@
             <label for="range-control">Уровень</label>
             <input type="range" min="0" max="10" step="1" value="0" name="effect-level" id="range-control">
           </div>
-          <button type="submit">Запостить</button>
-          <button type="reset">Отмена</button>
+          <button class="form-share__submit" type="submit">Запостить</button>
+          <button class="form-share__reset" type="reset">Отмена</button>
         </form>
       </section>
     </main>

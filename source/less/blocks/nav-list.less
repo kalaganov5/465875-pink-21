@@ -1,0 +1,36 @@
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 4px 4px fade(@black, 25%);
+}
+
+.nav-list__link {
+  .font-700;
+  font-size: 18px;
+  line-height: 32px;
+  color: @white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: block;
+  box-sizing: border-box;
+  border-top: 1px solid @black;
+  box-shadow: inset 0 1px fade(@white, 15%);
+
+  &:hover,
+  &:focus {
+    color: @purplish-red;
+  }
+
+  &:active {
+    opacity: 0.3;
+    color: @purplish-red;
+  }
+}
+
+.nav-list__item:last-child .nav-list__link {
+  border-bottom: 1px solid @black;
+}
