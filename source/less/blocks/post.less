@@ -1,29 +1,24 @@
 .post__content {
-  background-color: @smoky-white;
+  background-color: @color-smoky-white;
 }
 
 .post__user-name {
-  .font-700;
-  color: @granite;
-  font-size: 14px;
-  line-height: 24px;
+  .font-config(700, 14px, 24px);
+  color: @color-granite;
 }
 
 .post__time {
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 .post__comment {
-  .font-400;
-  color: @granite;
-  font-size: 14px;
-  line-height: 24px;
+  .font-config(400, 14px, 24px);
+  color: @color-granite;
 }
 
 .post__like {
-  .font-400;
-  color: @purplish-red;
-  font-size: 12px;
-  line-height: 24px;
+  .font-config(400, 12px, 24px);
+  color: @color-purplish-red;
   text-transform: uppercase;
 }

@@ -1,52 +1,51 @@
 .form-share {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  background-color: @smoky-white;
+  background-color: @color-smoky-white;
+}
+
+.form-share__list {
+  .list-reset;
 }
 
 .form-share__submit {
-  .font-700;
+  font-family: inherit;
+  .font-config(700, 18px, 18px);
   padding: 21px 30px;
-  color: @purplish-red;
-  border: 3px solid @purplish-red;
+  color: @color-purplish-red;
+  border: 3px solid @color-purplish-red;
   background-color: transparent;
-  font-size: 18px;
-  line-height: 18px;
   border-radius: 30px;
   box-sizing: border-box;
 
   &:hover,
   &:focus {
-    color: @white;
-    background-color: @purplish-red;
+    color: @color-white;
+    background-color: @color-purplish-red;
   }
 
   &:active {
-    color: fade(@white, 30%);
+    color: rgba(@color-white, 30%);
   }
 }
 
 .form-share__reset {
-  .font-700;
+  font-family: inherit;
+  .font-config(700, 18px, 18px);
   padding: 21px 30px;
-  color: fade(@granite, 10%);
-  border: 3px solid fade(@granite, 10%);
+  color: rgba(@color-granite, 10%);
+  border: 3px solid rgba(@color-granite, 10%);
   background-color: transparent;
-  font-size: 18px;
-  line-height: 18px;
   border-radius: 30px;
   box-sizing: border-box;
 
   &:hover,
   &:focus {
-    border-color: fade(@granite, 30%);
-    color: fade(@granite, 30%);
+    border-color: rgba(@color-granite, 30%);
+    color: rgba(@color-granite, 30%);
   }
 
   &:active {
-    background-color: fade(@granite, 30%);
-    color: fade(@white, 30%);
-    border-color: fade(@granite, 30%);
+    background-color: @color-granite;
+    color: @color-white;
+    opacity: 0.3;
   }
 }
