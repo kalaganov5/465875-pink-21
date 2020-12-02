@@ -1,31 +1,22 @@
 .form__label {
-  .font-400;
-  font-size: 14px;
-  line-height: 30px;
-  color: @purplish-red;
+  .font-config(400, 14px, 30px);
+  color: @color-purplish-red;
   text-transform: uppercase;
 }
 
-.form__label[for^="achievements"] {
-  color: @granite;
-  text-transform: none;
-  font-size: 18px;
-  line-height: 30px;
-}
-
+.form__label[for^="achievements"],
 .form__label[for^="travel"] {
-  color: @granite;
+  color: @color-granite;
   text-transform: none;
   font-size: 18px;
   line-height: 30px;
 }
 
 .form__input {
-  .font-400;
-  font-size: 18px;
-  line-height: 30px;
-  color: @granite;
-  border: 2px solid @light-gray;
+  .font-config(400, 18px, 30px);
+  font-family: inherit;
+  color: @color-granite;
+  border: 2px solid @color-light-gray;
   border-radius: 1px;
   padding: 23px 20px;
 
@@ -35,31 +26,27 @@
 }
 
 .form__group-title {
-  .font-400;
-  font-size: 14px;
-  line-height: 18px;
+  .font-config(400, 14px, 18px);
   text-transform: uppercase;
-  color: @purplish-red;
+  color: @color-purplish-red;
   text-align: center;
 }
 
 .form__achievements {
-  background-color: @smoky-white;
+  background-color: @color-smoky-white;
 }
 
 .form__travel {
-  background-color: @smoky-white;
+  background-color: @color-smoky-white;
 }
 
 .form__desc {
-  .font-400;
-  font-size: 14px;
-  line-height: 30px;
+  .font-config(400, 14px, 30px);
   text-align: center;
-  color: @granite;
+  color: @color-granite;
   text-transform: uppercase;
 }
 
 .form__required-mark {
-  color: @purplish-red;
+  color: @color-purplish-red;
 }
