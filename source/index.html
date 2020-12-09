@@ -35,29 +35,31 @@
     </header>
     <main class="page-main">
       <section class="get-app">
-        <h1 class="visually-hidden">Приложение Pink</h1>
-        <b class="get-app__title title">Взгляните на жизнь иначе!</b>
-        <div class="get-app__download app-download">
-          <a class="app-download__link" href="https://www.apple.com/app-store/" target="_blank">Скачать приложение</a>
-          <div class="app-download__store app-store">
-            <ul class="app-store__list">
-              <li class="app-store__item">
-                <a class="app-store__link app-store__link--app-store" href="https://www.apple.com/app-store/" target="_blank" title="Скачать в App Store">
-                  <img src="https://dummyimage.com/47x46.gif" alt="Магазин приложений Apple" width="47" height="56"/>
-                </a>
-              </li>
-              <li class="app-store__item">
-                <a class="app-store__link app-store__link--play-market" href="https://play.google.com/store/" target="_blank" title="Скачать в Play Market">
-                  <img src="https://dummyimage.com/47x46.gif" alt="Магазин приложений Google" width="47" height="56"/>
-                </a>
-              </li>
-              <li class="app-store__item">
-                <a class="app-store__link app-store__link--ms-store" href="https://www.microsoft.com/" target="_blank" title="Скачать в MicroSoft Store">
-                  <img src="https://dummyimage.com/47x46.gif" alt="Магазин приложений MicroSoft" width="47" height="56"/>
-                </a>
-              </li>
-            </ul>
-            <p class="app-store__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="get-app_container container">
+          <h1 class="visually-hidden">Приложение Pink</h1>
+          <b class="get-app__title title">Взгляните на жизнь иначе!</b>
+          <div class="get-app__download app-download">
+            <a class="app-download__link" href="https://www.apple.com/app-store/" target="_blank">Скачать приложение</a>
+            <div class="app-download__store app-store">
+              <ul class="app-store__list">
+                <li class="app-store__item">
+                  <a class="app-store__link app-store__link--app-store" href="https://www.apple.com/app-store/" target="_blank" title="Скачать в App Store">
+                    <img src="https://dummyimage.com/47x46.gif" alt="Магазин приложений Apple" width="47" height="56"/>
+                  </a>
+                </li>
+                <li class="app-store__item">
+                  <a class="app-store__link app-store__link--play-market" href="https://play.google.com/store/" target="_blank" title="Скачать в Play Market">
+                    <img src="https://dummyimage.com/47x46.gif" alt="Магазин приложений Google" width="47" height="56"/>
+                  </a>
+                </li>
+                <li class="app-store__item">
+                  <a class="app-store__link app-store__link--ms-store" href="https://www.microsoft.com/" target="_blank" title="Скачать в MicroSoft Store">
+                    <img src="https://dummyimage.com/47x46.gif" alt="Магазин приложений MicroSoft" width="47" height="56"/>
+                  </a>
+                </li>
+              </ul>
+              <p class="app-store__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            </div>
           </div>
         </div>
       </section>
@@ -69,10 +71,12 @@
             <li class="how-work__item">
               <h3 class="how-work__subtitle">Поднимает настроение</h3>
               <p class="how-work__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              <img class="how-work__image" src="https://dummyimage.com/136x245.gif" width="136" height="245" alt="В телефоне запущено приложение Pink">
             </li>
             <li class="how-work__item">
               <h3 class="how-work__subtitle">Меняет мир вокруг</h3>
               <p class="how-work__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              <img class="how-work__image" src="https://dummyimage.com/136x245.gif" width="136" height="245" alt="В телефоне запущено приложение Pink">
             </li>
             <li class="how-work__item">
               <h3 class="how-work__subtitle">Заводит новых друзей</h3>
@@ -84,7 +88,7 @@
       </section>
       <div class="time">
         <div class="time__container container">
-          <p class="time__title">Эффект на 24 часа!</p>
+          <p class="time__title">Эффект <br>на&nbsp;24&nbsp;часа!</p>
           <p class="time__desc">Британские ученые провели исследования и&nbsp;доказали, что положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
           <a class="time__link" href="#">Узнать больше об исследовании</a>
         </div>
@@ -93,20 +97,29 @@
         <h2 class="visually-hidden">Отзывы</h2>
         <div class="review__container container">
           <ul class="review__list">
-            <li class="review__item">
-              <p class="review__name">Николай Петров</p>
+            <li class="review__item review__item--active">
+              <div class="review__user">
+                <p class="review__name">Николай Петров</p>
+                <p class="review__bio">25 лет, водитель трамвая</p>
+              </div>
               <blockquote class="review__text">
                 &laquo;Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на&nbsp;привычные серые вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;
               </blockquote>
             </li>
             <li class="review__item">
-              <p class="review__name">Николай Петров</p>
+              <div class="review__user">
+                <p class="review__name">Николай Петров</p>
+                <p class="review__bio">25 лет, водитель трамвая</p>
+              </div>
               <blockquote class="review__text">
                 &laquo;Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на&nbsp;привычные серые вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;
               </blockquote>
             </li>
             <li class="review__item">
-              <p class="review__name">Николай Петров</p>
+              <div class="review__user">
+                <p class="review__name">Николай Петров</p>
+                <p class="review__bio">25 лет, водитель трамвая</p>
+              </div>
               <blockquote class="review__text">
                 &laquo;Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на&nbsp;привычные серые вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!&raquo;
               </blockquote>
@@ -158,24 +171,26 @@
     <footer class="footer">
       <section class="footer__contact container">
         <h2 class="footer__title title">Остались вопросы?<br>Свяжитесь с нами!</h2>
-        <div class="footer__block">
-          <p class="footer__subtitle">Звоните:</p>
-          <a class="footer__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
-        </div>
-        <div class="footer__block">
-          <p class="footer__subtitle">Пишите:</p>
-          <a class="footer__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </div>
-        <div class="footer__block">
-          <p class="footer__subtitle">Приезжайте в гости:</p>
-          <address class="footer__link">ул. Большая Конюшенная, 19/8</address>
-        </div>
+        <ul class="footer__list list-contact">
+          <li class="list-contact__item">
+            <p class="list-contact__subtitle">Звоните:</p>
+            <a class="list-contact__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </li>
+          <li class="list-contact__item">
+            <p class="list-contact__subtitle">Пишите:</p>
+            <a class="list-contact__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+          <li class="list-contact__item">
+            <p class="list-contact__subtitle">Приезжайте в гости:</p>
+            <address class="list-contact__link">ул. Большая <br>Конюшенная, 19/8</address>
+          </li>
+        </ul>
       </section>
       <div class="footer__map">
         <img src="https://dummyimage.com/320x200.gif" alt=""/>
       </div>
       <div class="footer__main">
-        <img src="https://dummyimage.com/145x40.gif" alt="Приложение Pink" width="145" height="40">
+        <img class="footer__logo" src="https://dummyimage.com/145x40.gif" alt="Приложение Pink" width="145" height="40">
         <ul class="footer__social social-list">
           <li class="social-list__item">
             <a class="social-list__link social-list__link--twitter" href="#" title="Наш Twitter">

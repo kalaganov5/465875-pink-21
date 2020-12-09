@@ -1,0 +1,41 @@
+.list-contact {
+  .list-reset;
+}
+
+.list-contact__item {
+  text-align: center;
+}
+
+.list-contact__subtitle {
+  .font-config(700, 18px, 25px);
+  color: @color-granite;
+}
+
+.list-contact__link {
+  .font-config(300, 24px, 33px);
+  text-decoration: none;
+  color: @color-purplish-red;
+  font-style: normal;
+}
+
+@media (min-width: @width-tablet) {
+  .list-contact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: space-around;
+    flex-basis: 300px;
+  }
+}
+
+@media (min-width: @width-desktop) {
+  .list-contact__item:first-child {
+    order: 2;
+  }
+
+  .list-contact__item:last-child {
+    order: 1;
+  }
+}
