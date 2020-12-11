@@ -1,3 +1,44 @@
 .time {
   display: none;
+  background-color: @color-smoky-white;
+}
+
+.time__title {
+  .font-config(700, 30px, 36px);
+  color: @color-black;
+}
+
+.time__desc {
+  .font-config(400, 14px, 24px);
+  color: @color-granite;
+}
+
+.time__link {
+  .font-config(400, 14px, 24px);
+  color: @color-purplish-red;
+}
+
+@media (min-width: @width-tablet) {
+  .time {
+    display: block;
+  }
+
+  .time__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    & > * {
+      grid-column: ~"2/3";
+    }
+  }
+}
+
+@media (min-width: @width-desktop) {
+  .time__container {
+    grid-template-columns: repeat(3, 1fr);
+
+    & > * {
+      grid-column: ~"2/4";
+    }
+  }
 }

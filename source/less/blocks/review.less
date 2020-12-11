@@ -1,5 +1,16 @@
 .review__list {
   .list-reset;
+  width: 100%;
+  display: flex;
+}
+
+.review__item {
+  display: none;
+}
+
+.review__item--active {
+  display: flex;
+  flex-direction: column;
 }
 
 .review__name {
@@ -7,8 +18,30 @@
   text-align: center;
 }
 
+.review__bio {
+  display: none;
+}
+
 .review__text {
   .font-config(400, 14px, 30px);
   text-align: center;
   margin: 0;
+}
+
+@media (min-width: @width-tablet) {
+  .review__item--active {
+    flex-direction: column-reverse;
+  }
+
+  .review__bio {
+    .font-config(400, 14px, 30px);
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (min-width: @width-desktop) {
+  .review__toggle {
+    display: none;
+  }
 }

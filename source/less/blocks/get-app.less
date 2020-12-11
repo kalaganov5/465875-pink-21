@@ -2,8 +2,31 @@
   background-color: @color-sapphire-blue;
 }
 
+.get-app_container {
+  min-height: 500px;
+}
+
 .get-app__title {
   color: @color-white;
   display: block;
   line-height: 28.8px;
+}
+
+.get-app__download {
+  text-align: center;
+}
+
+@media (min-width: @width-tablet) {
+  .get-app_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .get-app__title {
+    grid-column: ~"1/1";
+  }
+
+  .get-app__download {
+    grid-column: ~"1/1";
+  }
 }
