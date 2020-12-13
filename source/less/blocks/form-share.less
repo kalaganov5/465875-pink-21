@@ -1,12 +1,36 @@
 .form-share {
   background-color: @color-smoky-white;
+  display: grid;
+  grid-template-areas:
+    "image"
+    "tools"
+    "tool-range"
+    "submit-button"
+    "reset-button";
+  gap: 20px;
+  padding: 20px 20px 50px;
+}
+
+.form-share__user-upload {
+  text-align: center;
+  grid-area: image;
 }
 
 .form-share__list {
   .list-reset;
+  grid-area: tools;
+}
+
+.form-share__list .form-share__range {
+  display: none;
+}
+
+.form-share__control {
+  grid-area: tool-range;
 }
 
 .form-share__submit {
+  grid-area: submit-button;
   font-family: inherit;
   .font-config(700, 18px, 18px);
   padding: 21px 30px;
@@ -28,6 +52,7 @@
 }
 
 .form-share__reset {
+  grid-area: reset-button;
   font-family: inherit;
   .font-config(700, 18px, 18px);
   padding: 21px 30px;
@@ -47,5 +72,35 @@
     background-color: @color-granite;
     color: @color-white;
     opacity: 0.3;
+  }
+}
+
+@media (min-width: @width-tablet) {
+  .form-share {
+    grid-template-areas:
+      "image tools"
+      "image tools"
+      "image tools"
+      "image submit-button"
+      "image reset-button";
+  }
+
+  .form-share__control {
+    display: none;
+  }
+
+  .form-share__list .form-share__range {
+    display: inline-block;
+  }
+}
+
+@media (min-width: @width-desktop) {
+  .form-share {
+    grid-template-columns: 1fr repeat(4, minmax(auto, 235px)) 1fr;
+    grid-template-areas:
+      ". image image tools tools ."
+      ". image image submit-button reset-button .";
+    padding-left: 0;
+    padding-right: 0;
   }
 }
