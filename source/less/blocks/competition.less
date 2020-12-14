@@ -1,13 +1,60 @@
-.competition__header {
+.competition {
+  margin-bottom: 30px;
+}
+
+.competition__headline {
   background-color: @color-granite;
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, @width-desktop) 1fr;
+  grid-template-rows: minmax(auto, 300px);
+  align-items: center;
 }
 
 .competition__title {
   color: @color-white;
+  grid-column: ~"2/3";
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .competition__subtitle {
   .font-config(400, 14px, 30px);
   text-align: center;
   color: @color-granite;
+}
+
+.competition__appeal,
+.competition__subtitle br {
+  display: none;
+}
+
+.competition__form  {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, @width-desktop / 2) minmax(auto, @width-desktop / 2) 1fr;
+}
+
+@media (min-width: @width-tablet) {
+  .competition__form  {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .competition__title {
+    .font-config(300, 50px, 68px);
+  }
+
+  .competition__subtitle {
+    font-size: 18px;
+  }
+
+  .competition__appeal,
+  .competition__subtitle br {
+    display: inline;
+  }
+}
+
+@media (min-width: @width-desktop) {
+  .competition__subtitle br {
+    display: none;
+  }
 }
