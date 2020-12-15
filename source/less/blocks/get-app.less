@@ -24,9 +24,16 @@
 
   .get-app__title {
     grid-column: ~"1/1";
+    .font-config(300, 40px, 48px);
   }
 
   .get-app__download {
     grid-column: ~"1/1";
+  }
+}
+
+@media (min-width: @width-desktop) {
+  .get-app__title {
+    .font-config(300, 50px, 68px);
   }
 }

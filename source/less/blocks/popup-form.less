@@ -1,3 +1,19 @@
+.popup-form {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: @color-white;
+  text-align: center;
+  box-shadow: 0 4px 4px fade(@color-black, 25%);
+  max-width: 100%;
+  width: 780px;
+  border-radius: 0 0 1px 1px;
+  padding: 50px 0;
+}
+
 .popup-form__title {
   .font-config(700, 18px, 24px);
   color: @color-black;
@@ -8,4 +24,9 @@
   .font-config(400, 14px, 24px);
   color: @color-granite;
   text-align: center;
+}
+
+.popup-form__container {
+  background-color: @color-smoky-white;
+  padding: 30px;
 }
