@@ -47,6 +47,14 @@
     box-shadow: none;
     padding: 15px 0;
     margin-bottom: 10px;
+
+    &:active {
+      color: @color-white;
+    }
+
+    &--active {
+      box-shadow: 0 2px 0 0 @color-white;
+    }
   }
 
   .nav-list__item:last-child .nav-list__link {
