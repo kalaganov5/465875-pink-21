@@ -1,29 +1,27 @@
 .page-header {
-  background-color: rgba(@color-black, 30%);
-  box-shadow: 0 4px 4px rgba(@color-black, 25%);
-}
-
-.page-header--menu-open {
   background-color: @color-granite;
+  box-shadow: 0 4px 4px rgba(@color-black, 25%);
 }
 
 .page-header__wrap {
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
+  grid-row-gap: 17px;
   padding-top: 23px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 0;
 }
 
 .page-header__logo {
   grid-column: ~"1/1";
-  margin-left: 20px;
-  margin-bottom: 20px;
 }
 
 .page-header__toggle {
+  display: none;
   font-family: inherit;
   justify-self: flex-end;
-  margin-right: 20px;
   margin-top: -5px;
   grid-column: ~"2/-1";
   width: 50px;
@@ -64,6 +62,10 @@
   }
 }
 
+.page-header__toggle.support-js {
+  display: inline-block;
+}
+
 .page-header__toggle--hamburger {
   &::before {
     transform: rotate(0deg);
@@ -91,13 +93,20 @@
   }
 }
 
-.page-header__nav--closed {
+.page-header--closed {
+  background-color: rgba(@color-black, 30%);
+}
+
+.page-header--closed .page-header__nav {
   display: none;
 }
 
 
 .page-header__nav {
   grid-column: ~"1 / -1";
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: 3px;
 }
 
 @media (min-width: @width-tablet) {
@@ -105,16 +114,20 @@
     padding-top: 26px;
   }
 
-  .page-header__logo {
-    margin-bottom: 40px;
-  }
-
   .page-header__toggle {
     margin-top: 14px;
+  }
+
+  .page-header__nav {
+    margin-top: 22px;
   }
 }
 
 @media (min-width: @width-desktop) {
+  .page-header {
+    background-color: rgba(@color-black, 30%);
+  }
+
   .page-header__wrap {
     max-width: @width-desktop;
     margin-left: auto;
@@ -122,19 +135,26 @@
     grid-template-columns: 200px 1fr;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 0;
   }
 
   .page-header__logo {
     margin-left: 0;
   }
 
-  .page-header__toggle {
+  .page-header__toggle,
+  .page-header__toggle.support-js {
     display: none;
+  }
+
+  .page-header--closed .page-header__nav {
+    display: block;
   }
 
   .page-header__nav {
     grid-column: ~"2/-1";
-    display: block;
-    margin-top: 6px;
+    margin-top: 5px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }

@@ -1,4 +1,8 @@
 .get-app {
+  display: grid;
+  padding-top: 25px;
+  grid-template-columns: 1fr repeat(2, minmax(auto, calc(@width-desktop / 2))) 1fr;
+  grid-template-rows: max-content minmax(290px, auto) max-content;
 
   &::before {
     content: "";
@@ -9,23 +13,34 @@
     background-size: 100%;
     position: absolute;
     z-index: -1;
-    background-color: #1D2631;
+    background-color: @color-sapphire-blue;
     top: 0;
   }
 }
 
-.get-app_container {
-  min-height: 500px;
-}
-
 .get-app__title {
+  grid-column: ~"2/4";
+  grid-row: ~"1/2";
   color: @color-white;
   display: block;
   line-height: 28.8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 27px;
 }
 
 .get-app__download {
+  grid-column: ~"2/4";
+  grid-row: ~"5/6";
   text-align: center;
+}
+
+@media (min-resolution: 2dppx) {
+  .get-app {
+    &::before {
+      background-image: url("../../img/look-life-differently-mobile@2x.jpg");
+    }
+  }
 }
 
 @media (min-width: @width-tablet) {
@@ -35,18 +50,8 @@
     }
   }
 
-  .get-app_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
   .get-app__title {
-    grid-column: ~"1/1";
     .font-config(300, 40px, 48px);
-  }
-
-  .get-app__download {
-    grid-column: ~"1/1";
   }
 }
 
