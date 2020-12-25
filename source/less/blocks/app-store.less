@@ -3,10 +3,32 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.app-store__item {
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .app-store__desc {
   .font-config(300, 14px, 24px);
   color: @color-white;
   text-align: center;
+}
+
+
+@media (min-width: @width-tablet) {
+  .app-store__list {
+    margin-bottom: 30px;
+  }
+
+  .app-store__desc {
+    .font-config(300, 18px, 24px);
+  }
 }
