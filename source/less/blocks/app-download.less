@@ -8,7 +8,7 @@
   .font-config(700; 18px; 18px);
   text-decoration: none;
   color: @color-white;
-  padding: 15px 30px;
+  padding: 15px 20px;
   width: 100%;
   max-width: 300px;
   display: inline-block;
@@ -26,5 +26,17 @@
 
   .app-download__link {
     margin-bottom: 48px;
+  }
+}
+
+@media (min-width: @width-desktop) {
+  .app-download {
+    padding-right: 0px;
+    padding-left: 10px;
+  }
+
+  .app-download__link {
+    .font-config(700, 21px, 18px);
+    margin-bottom: 70px;
   }
 }

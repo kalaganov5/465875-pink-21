@@ -7,19 +7,20 @@
   &::before {
     content: "";
     width: 100%;
-    min-height: 462px;
-    background-image: url("../../img/look-life-differently-mobile@1x.jpg");
+    height: 100%;
+    background-image: url("../img/look-life-differently-m.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
-    position: absolute;
+    background-size: cover;
+    background-position: top center;
+    background-color: @color-granite;
     z-index: -1;
-    background-color: @color-sapphire-blue;
+    position: absolute;
     top: 0;
   }
 
   @media (min-resolution: 2dppx) {
     &::before {
-      background-image: url("../../img/look-life-differently-mobile@2x.jpg");
+      background-image: url("../img/look-life-differently-m@2x.jpg");
     }
   }
 }
@@ -47,7 +48,7 @@
     content: "";
     width: 320px;
     height: 286px;
-    background-image: url("../../img/pink-app-example-m.png");
+    background-image: url("../img/pink-app-example-m.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -61,7 +62,7 @@
 
   @media (min-resolution: 2dppx) {
     &::before {
-      background-image: url("../../img/pink-app-example-m@2x.png");
+      background-image: url("../img/pink-app-example-m@2x.png");
     }
   }
 }
@@ -70,17 +71,16 @@
   .get-app {
     grid-template-columns: 1fr repeat(2, minmax(310px, calc(@width-desktop / 2))) 1fr;
     grid-template-rows: auto;
+    padding-bottom: 74px;
     padding-top: 95px;
-    padding-bottom: 34px;
 
     &::before {
-      min-height: 729px;
-      background-image: url("../../img/look-life-differently-tablet@1x.jpg");
+      background-image: url("../img/look-life-differently-t.jpg")
     }
 
     @media (min-resolution: 2dppx) {
       &::before {
-        background-image: url("../../img/look-life-differently-tablet@2x.jpg");
+        background-image: url("../img/look-life-differently-t@2x.jpg")
       }
     }
   }
@@ -97,23 +97,56 @@
     position: static;
 
     &::before {
-      background-image: url("../../img/pink-app-example-t.png");
+      background-image: url("../img/pink-app-example-t.png");
       width: 660px;
       height: 545px;
-      bottom: 54px;
+      bottom: 0;
       z-index: -1;
     }
 
     @media (min-resolution: 2dppx) {
       &::before {
-        background-image: url("../../img/pink-app-example-t@2x.png");
+        background-image: url("../img/pink-app-example-t@2x.png");
       }
     }
   }
 }
 
 @media (min-width: @width-desktop) {
+  .get-app {
+    padding-top: 100px;
+    padding-bottom: 85px;
+    &::before {
+      background-image: url("../img/look-life-differently-d.jpg")
+    }
+
+    @media (min-resolution: 2dppx) {
+      &::before {
+        background-image: url("../img/look-life-differently-d@2x.jpg")
+      }
+    }
+  }
+
   .get-app__title {
     .font-config(300, 50px, 68px);
+    margin-right: 170px;
+  }
+
+  .get-app__download {
+    margin-right: 170px;
+    padding-top: 40px;
+
+    &::before {
+      background-image: url("../img/pink-app-example-d.png");
+      width: 911px;
+      height: 648px;
+      right: 25px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      &::before {
+        background-image: url("../img/pink-app-example-d@2x.png");
+      }
+    }
   }
 }
