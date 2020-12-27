@@ -1,5 +1,5 @@
 "use strict";
-
+// HEADER
 // variables
 let menuToggleButton = document.querySelector(".page-header__toggle");
 let menuClosed = document.querySelector(".page-header__nav--closed");
@@ -16,3 +16,10 @@ menuToggleButton.onclick = function() {
   menuToggleButton.classList.toggle("page-header__toggle--hamburger");
   header.classList.toggle("page-header--closed");
 };
+
+// REVIEW SLIDER
+// variables
+let slidesItem = document.querySelectorAll(".review__item");
+let touchSlideButton = document.querySelectorAll(".review__radio");
+let slideNextButton = document.querySelectorAll(".review__switcher--forward");
+let slideBackButton = document.querySelectorAll(".review__switcher--backward");
