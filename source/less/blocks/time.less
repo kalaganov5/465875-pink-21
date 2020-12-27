@@ -1,21 +1,5 @@
 .time {
   display: none;
-  background-color: @color-smoky-white;
-}
-
-.time__title {
-  .font-config(700, 30px, 36px);
-  color: @color-black;
-}
-
-.time__desc {
-  .font-config(400, 14px, 24px);
-  color: @color-granite;
-}
-
-.time__link {
-  .font-config(400, 14px, 24px);
-  color: @color-purplish-red;
 }
 
 @media (min-width: @width-tablet) {
@@ -31,9 +15,28 @@
       grid-column: ~"2/3";
     }
   }
+
+  .time__title {
+    .font-config(700, 30px, 36px);
+    color: @color-black;
+  }
+
+  .time__desc {
+    .font-config(400, 14px, 24px);
+    color: @color-granite;
+  }
+
+  .time__link {
+    .font-config(400, 14px, 24px);
+    color: @color-purplish-red;
+}
 }
 
 @media (min-width: @width-desktop) {
+  .time {
+    background-color: @color-smoky-white;
+  }
+
   .time__container {
     grid-template-columns: repeat(3, 1fr);
 

@@ -131,23 +131,32 @@
     <main class="page-main">
       <section class="how-work">
         <h2 class="visually-hidden">Что делает приложение</h2>
-        <div class="how-work__container container">
-          <p class="how-work__title title">Устали от серости мегаполиса?<br>Нам есть, что вам предложить!</p>
+        <p class="how-work__title title">Устали от серости мегаполиса?<br class="how-work__sentence-separator">Нам есть, что вам <br class="how-work__word-separator">предложить!</p>
+        <div class="how-work__wrap">
           <ul class="how-work__list">
             <li class="how-work__item">
               <h3 class="how-work__subtitle">Поднимает настроение</h3>
               <p class="how-work__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-              <img class="how-work__image" src="https://dummyimage.com/136x245.gif" width="136" height="245" alt="В телефоне запущено приложение Pink">
-            </li>
+              <picture class="how-work__image-group">
+                <source media="(min-width: 960px)" srcset="img/reality.png 1x, img/reality@2x.png 2x">
+                <img class="how-work__image" src="img/reality.png" width="186" height="301" alt="Типичные мусорные баки">
+              </picture>            </li>
             <li class="how-work__item">
               <h3 class="how-work__subtitle">Меняет мир вокруг</h3>
-              <p class="how-work__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-              <img class="how-work__image" src="https://dummyimage.com/136x245.gif" width="136" height="245" alt="В телефоне запущено приложение Pink">
-            </li>
+              <p class="how-work__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
+              <picture class="how-work__image-group">
+                <source media="(min-width: 960px)" srcset="img/app-work.png 1x, img/app-work@2x.png 2x">
+                <img class="how-work__image" src="img/app-work.png" width="186" height="301" alt="Запускаем приложение в работу">
+              </picture>            </li>
             <li class="how-work__item">
               <h3 class="how-work__subtitle">Заводит новых друзей</h3>
               <p class="how-work__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-              <img class="how-work__image" src="https://dummyimage.com/136x245.gif" width="136" height="245" alt="В телефоне запущено приложение Pink">
+              <picture class="how-work__image-group">
+                <source media="(min-width: 960px)" srcset="img/start-app-d.png 1x, img/start-app-d@2x.png 2x">
+                <source media="(min-width: 660px)" srcset="img/start-app-t.png 1x, img/start-app-t@2x.png 2x">
+                <source srcset="img/start-app-m.png 1x, img/start-app-m@2x.png 2x">
+                <img class="how-work__image" src="img/start-app-m.png" width="157" height="277" alt="В телефоне запущено приложение Pink">
+              </picture>
             </li>
           </ul>
         </div>
