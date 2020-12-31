@@ -1,7 +1,33 @@
 .price {
   background-color: @color-smoky-white;
+  position: relative;
+  padding-top: 62px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    border-top: 20px solid @color-white;
+    border-right: calc(100vw - 21px) solid @color-smoky-white;
+  }
 }
 
-.price__container {
-  overflow-x: auto;
+@media (min-width: @width-tablet) {
+  .price {
+    padding-top: 57px;
+
+    &::before {
+      border-top: 41px  solid @color-white;
+    }
+  }
+}
+
+@media (min-width: @width-desktop) {
+  .price {
+    padding-top: 105px;
+
+    &::before {
+      border-top: 79px  solid @color-white;
+    }
+  }
 }
