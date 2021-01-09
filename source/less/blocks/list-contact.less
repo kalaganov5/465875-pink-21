@@ -9,6 +9,7 @@
 .list-contact__subtitle {
   .font-config(700, 18px, 25px);
   color: @color-granite;
+  margin-bottom: 0;
 }
 
 .list-contact__link {
@@ -26,16 +27,25 @@
     flex-grow: 1;
     flex-shrink: 1;
     justify-content: space-around;
+    row-gap: 25px;
   }
 
   .list-contact__item {
     flex-basis: 50%;
+  }
+
+  .list-contact__subtitle {
+    margin-bottom: 3px;
   }
 }
 
 @media (min-width: @width-desktop) {
   .list-contact__item {
     flex-basis: 33%;
+  }
+
+  .list-contact__subtitle {
+    margin-bottom: 20px;
   }
 
   .list-contact__item:first-child {
