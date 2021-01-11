@@ -1,14 +1,46 @@
 .table-price {
   border-spacing: 0;
-  width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
   border-collapse: collapse;
 }
 
-// .table-price__row th:first-child {
-//   display: none;
-// }
+.table-price__row {
+  position: relative;
+}
+
+
+.table-price__row td:first-child {
+  z-index: -1;
+  border-color: @color-smoky-white;
+
+  &::before {
+    content: attr(data-text);
+    position: absolute;
+    width: calc(100% - 95px);
+    height: 100%;
+    top: 7px;
+    left: 15px;
+    z-index: 19;
+    top: 0;
+    left: calc(200% + 15px);
+    z-index: 10;
+    padding-top: 8px;
+    left: calc(200% + 25px);
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  &::after {
+    content: "";
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: @color-smoky-white;
+  }
+}
 
 .table-price__title {
   .font-config(700, 16px, 30px);
@@ -19,7 +51,7 @@
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 12px;
-  padding-bottom: 5px;
+  padding-bottom: 28px;
   position: relative;
   overflow: hidden;
   z-index: -1;
@@ -33,10 +65,10 @@
   &::before {
     content: "";
     position: absolute;
-    left: -80px;
+    left: -70px;
     top: 14px;
     transform: rotate(-45deg);
-    height: 20px;
+    height: 25px;
     width: 200px;
     background-color: @color-purplish-red;
   }
@@ -45,8 +77,8 @@
     content: "хит";
     .font-config(400, 14px, 30px);
     position: absolute;
-    left: -80px;
-    top: 10px;
+    left: -73px;
+    top: 15px;
     transform: rotate(-45deg);
     width: 200px;
     text-align: center;
@@ -63,19 +95,16 @@
   color: @color-granite;
   border: 2px solid @color-light-gray;
   background-color: @color-white;
-  padding-top: 8px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 7px;
+  padding: 15px;
   text-transform: uppercase;
-  width: 25%;
-  min-width: 150px;
   position: relative;
-  z-index:-1
+  z-index:-2;
+  width: 25%;
 }
 
 .table-price__title-small {
   .font-config(300, 18px, 30px);
+  margin-top: -3px;
 }
 
 .table-price__yes,
@@ -87,12 +116,12 @@
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
-    left: 0;
     right: 0;
     bottom: 0;
     width: 31px;
     height: 21px;
     margin: auto;
+   right: 20px;
   }
 }
 
@@ -108,7 +137,6 @@
 @media (min-width: @width-tablet) {
   .table-price {
     border-spacing: 0;
-    width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
     border-collapse: collapse;
@@ -127,10 +155,6 @@
     position: relative;
     overflow: hidden;
     z-index: -1;
-  }
-
-  .table-price__title:nth-child(2) {
-    border-top-left-radius: 3px;
   }
 
   .table-price__title:nth-child(3) {
@@ -158,10 +182,6 @@
     }
   }
 
-  .table-price__title:last-child {
-    border-top-right-radius: 3px;
-  }
-
   .table-price__body td {
     .font-config(400, 14px, 30px);
     color: @color-granite;
@@ -171,7 +191,7 @@
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 7px;
-    text-transform: uppercase;
+    text-transform: none;
     width: 25%;
     min-width: 150px;
     position: relative;
@@ -180,6 +200,14 @@
 
   .table-price__title-small {
     .font-config(300, 18px, 30px);
+  }
+
+  .table-price__row td:first-child {
+    border-color: @color-light-gray;
+    &::after,
+    &::before {
+      content: none;
+    }
   }
 
   .table-price__yes,
@@ -210,5 +238,37 @@
   }
   .table-price__body td {
     text-transform: none;
+  }
+}
+
+@media (min-width: @width-desktop) {
+  .table-price__title {
+    font-size: 18px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+  }
+
+  .table-price__title:nth-child(3) {
+
+    &::before {
+      left: -69px;
+      height: 24px;
+    }
+
+    &::after {
+      left: -73px;
+      top: 15px;
+    }
+  }
+
+  .table-price__title-small {
+    font-size: 24px;
+  }
+
+  .table-price__body td {
+    font-size: 18px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 15px;
   }
 }

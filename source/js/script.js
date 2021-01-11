@@ -17,13 +17,6 @@ menuToggleButton.onclick = function() {
   header.classList.toggle("page-header--closed");
 };
 
-// REVIEW SLIDER
-// variables
-let slidesItem = document.querySelectorAll(".review__item");
-let touchSlideButton = document.querySelectorAll(".review__radio");
-let slideNextButton = document.querySelectorAll(".review__switcher--forward");
-let slideBackButton = document.querySelectorAll(".review__switcher--backward");
-
 // map
 let mapBlock = document.querySelector(".footer__map");
 mapBlock.classList.add("footer__map-js");

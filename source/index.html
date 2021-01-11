@@ -162,14 +162,16 @@
               <picture class="how-work__image-group">
                 <source media="(min-width: 960px)" srcset="img/reality.png 1x, img/reality@2x.png 2x">
                 <img class="how-work__image" src="img/reality.png" width="186" height="301" alt="Типичные мусорные баки">
-              </picture>            </li>
+              </picture>
+            </li>
             <li class="how-work__item">
               <h3 class="how-work__subtitle">Меняет мир вокруг</h3>
               <p class="how-work__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
               <picture class="how-work__image-group">
                 <source media="(min-width: 960px)" srcset="img/app-work.png 1x, img/app-work@2x.png 2x">
                 <img class="how-work__image" src="img/app-work.png" width="186" height="301" alt="Запускаем приложение в работу">
-              </picture>            </li>
+              </picture>
+            </li>
             <li class="how-work__item">
               <h3 class="how-work__subtitle">Заводит новых друзей</h3>
               <p class="how-work__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
@@ -236,7 +238,10 @@
       </section>
       <section class="price">
         <h2 class="visually-hidden">Цены</h2>
-        <div class="price__container">
+        <input class="price__radio" id="price-slide-1" type="radio" name="price__radio">
+        <input class="price__radio" id="price-slide-2" type="radio" name="price__radio" checked>
+        <input class="price__radio" id="price-slide-3" type="radio" name="price__radio">
+        <div class="price__box">
           <table class="price__table table-price">
             <thead class="table-price__header">
               <tr class="table-price__row">
@@ -248,30 +253,30 @@
             </thead>
             <tbody class="table-price__body">
               <tr class="table-price__row">
-                <td class="table-price__subtitle">Розовый фильтр</td>
+                <td class="table-price__subtitle" data-text="Розовый фильтр">Розовый фильтр</td>
                 <td class="table-price__yes"><span class="visually-hidden">Да</span></td>
                 <td class="table-price__yes"><span class="visually-hidden">Да</span></td>
                 <td class="table-price__yes"><span class="visually-hidden">Да</span></td>
               </tr>
               <tr class="table-price__row">
-                <td class="table-price__subtitle">Смайлики</td>
+                <td class="table-price__subtitle" data-text="Смайлики">Смайлики</td>
                 <td class="table-price__no"><span class="visually-hidden">Нет</span></td>
                 <td class="table-price__yes"><span class="visually-hidden">Да</span></td>
                 <td class="table-price__yes"><span class="visually-hidden">Да</span></td>
               </tr>
               <tr class="table-price__row">
-                <td class="table-price__subtitle">Комментарии</td>
+                <td class="table-price__subtitle" data-text="Комментарии">Комментарии</td>
                 <td class="table-price__no"><span class="visually-hidden">Нет</span></td>
                 <td class="table-price__no"><span class="visually-hidden">Нет</span></td>
                 <td class="table-price__yes"><span class="visually-hidden">Да</span></td>
               </tr>
             </tbody>
           </table>
-          <div class="price__control">
-            <input class="price__button" type="radio" name="price__button">
-            <input class="price__button" type="radio" name="price__button" checked>
-            <input class="price__button" type="radio" name="price__button">
-          </div>
+        </div>
+        <div class="price__control">
+          <label class="price__toggle-btn" for="price-slide-1"></label>
+          <label class="price__toggle-btn" for="price-slide-2"></label>
+          <label class="price__toggle-btn" for="price-slide-3"></label>
         </div>
       </section>
     </main>
