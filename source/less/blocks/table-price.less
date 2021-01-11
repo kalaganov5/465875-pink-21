@@ -9,7 +9,6 @@
   position: relative;
 }
 
-
 .table-price__row td:first-child {
   z-index: -1;
   border-color: @color-smoky-white;
@@ -19,22 +18,17 @@
     position: absolute;
     width: calc(100% - 95px);
     height: 100%;
-    top: 7px;
-    left: 15px;
-    z-index: 19;
     top: 0;
     left: calc(200% + 15px);
     z-index: 10;
-    padding-top: 8px;
-    left: calc(200% + 25px);
     padding-top: 14px;
     padding-bottom: 14px;
   }
 
   &::after {
     content: "";
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -98,18 +92,18 @@
   padding: 15px;
   text-transform: uppercase;
   position: relative;
-  z-index:-2;
+  z-index: -2;
   width: 25%;
 }
 
 .table-price__title-small {
+
   .font-config(300, 18px, 30px);
   margin-top: -3px;
 }
 
 .table-price__yes,
 .table-price__no {
-
   &::before {
     content: "";
     background-image: url("../img/mark-yes.svg");
@@ -125,7 +119,6 @@
 }
 
 .table-price__no {
-
   &::before {
     background-image: url("../img/mark-no.svg");
     width: 27px;
@@ -134,15 +127,7 @@
 }
 
 @media (min-width: @width-tablet) {
-  .table-price {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    border-collapse: collapse;
-  }
-
   .table-price__title {
-    .font-config(700, 16px, 30px);
-    border-right: 2px solid @color-smoky-white;
     background-color: @color-granite;
     color: @color-white;
     text-transform: uppercase;
@@ -193,7 +178,7 @@
     width: 25%;
     min-width: 150px;
     position: relative;
-    z-index:-1
+    z-index: -1;
   }
 
   .table-price__title-small {
@@ -202,6 +187,7 @@
 
   .table-price__row td:first-child {
     border-color: @color-light-gray;
+
     &::after,
     &::before {
       content: none;
@@ -210,7 +196,6 @@
 
   .table-price__yes,
   .table-price__no {
-
     &::before {
       content: "";
       background-image: url("../img/mark-yes.svg");
@@ -227,15 +212,11 @@
   }
 
   .table-price__no {
-
     &::before {
       background-image: url("../img/mark-no.svg");
       width: 27px;
       height: 27px;
     }
-  }
-  .table-price__body td {
-    text-transform: none;
   }
 }
 
@@ -247,7 +228,6 @@
   }
 
   .table-price__title:nth-child(3) {
-
     &::before {
       left: -69px;
       height: 24px;
