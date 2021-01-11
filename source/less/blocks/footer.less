@@ -12,7 +12,6 @@
 .footer__map {
   margin-bottom: 35px;
   text-align: center;
-  outline: 1px solid red;
   position: relative;
   height: 200px;
 
@@ -92,6 +91,8 @@
 .footer__map-js .footer__interactive-map {
   display: block;
   height: 100%;
+  width: 100%;
+  border: 0;
 }
 
 .footer .footer__social {
@@ -101,7 +102,7 @@
 @media (min-width: @width-tablet) {
 
   .footer__contact {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
 
   .footer__map {
@@ -116,7 +117,7 @@
   .footer__title {
     .font-config(300, 40px, 54px);
     margin-top: 13px;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
   }
 
   .footer__contact .footer__list {
@@ -156,7 +157,9 @@
 
     &::before {
       background-image: url("../img/triangle-d.svg");
-      height: 100%;
+      height: 25%;
+      right: 0;
+      margin: auto;
     }
   }
 
