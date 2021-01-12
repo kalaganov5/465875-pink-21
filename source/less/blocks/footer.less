@@ -5,8 +5,12 @@
 
 .footer__title {
   margin-top: 10px;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
   line-height: 29px;
+
+  @-moz-document url-prefix("") {
+    margin-bottom: 34px;
+  }
 }
 
 .footer__map {
@@ -108,6 +112,10 @@
     height: 374px;
     margin-bottom: 36px;
 
+    @-moz-document url-prefix("") {
+      margin-bottom: 34px;
+    }
+
     &::before {
       height: 100px;
     }
@@ -132,6 +140,7 @@
   .footer__link-logo {
     grid-column: ~"1/2";
     justify-self: start;
+    margin-top: -2px;
   }
 
   .footer__social {

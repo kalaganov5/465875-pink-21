@@ -12,6 +12,7 @@
 .table-price__row td:first-child {
   z-index: -1;
   border-color: @color-smoky-white;
+  border-right-color: @color-light-gray;
 
   &::before {
     content: attr(data-text);
@@ -42,13 +43,14 @@
   background-color: @color-granite;
   color: @color-white;
   text-transform: uppercase;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 12px;
-  padding-bottom: 28px;
+  padding: 12px 15px 30px 15px;
   position: relative;
   overflow: hidden;
   z-index: -1;
+
+  @-moz-document url-prefix("") {
+    padding: 12px 15px 28px 15px;
+  }
 }
 
 .table-price__title:nth-child(2) {
@@ -131,13 +133,14 @@
     background-color: @color-granite;
     color: @color-white;
     text-transform: uppercase;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 14px;
-    padding-bottom: 10px;
+    padding: 14px 15px 8px;
     position: relative;
     overflow: hidden;
     z-index: -1;
+
+    @-moz-document url-prefix("") {
+      padding-top: 12px;
+    }
   }
 
   .table-price__title:nth-child(3) {
@@ -173,7 +176,7 @@
     padding-top: 8px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 7px;
+    padding-bottom: 8px;
     text-transform: none;
     width: 25%;
     min-width: 150px;
@@ -246,8 +249,12 @@
 
   .table-price__body td {
     font-size: 18px;
-    padding-top: 15px;
+    padding-top: 16px;
     padding-left: 20px;
     padding-bottom: 15px;
+
+    @-moz-document url-prefix("") {
+      padding-top: 15px;
+    }
   }
 }
