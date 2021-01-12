@@ -57,28 +57,17 @@
   border-top-left-radius: 3px;
 }
 
-.table-price__title:nth-child(3) {
+.table-price__title--hit {
   &::before {
-    content: "";
-    position: absolute;
-    left: -70px;
-    top: 14px;
-    transform: rotate(-45deg);
-    height: 25px;
-    width: 200px;
-    background-color: @color-purplish-red;
-  }
-
-  &::after {
     content: "хит";
     .font-config(400, 14px, 30px);
     position: absolute;
     left: -73px;
-    top: 15px;
-    transform: rotate(-45deg);
+    top: 14px;
+    height: 30px;
     width: 200px;
-    text-align: center;
-    .font-config(400, 14px, 30px);
+    transform: rotate(-45deg);
+    background-image: linear-gradient(to bottom, transparent 10%, @color-purplish-red 10% 90%, transparent 90%);
   }
 }
 
@@ -107,9 +96,7 @@
 .table-price__yes,
 .table-price__no {
   &::before {
-    content: "";
-    background-image: url("../img/icon-mark-yes.svg");
-    background-repeat: no-repeat;
+    content: url("../img/icon-mark-yes.svg");
     position: absolute;
     top: 0;
     right: 20px;
@@ -122,7 +109,7 @@
 
 .table-price__no {
   &::before {
-    background-image: url("../img/icon-mark-no.svg");
+    content: url("../img/icon-mark-no.svg");
     width: 27px;
     height: 27px;
   }
@@ -143,28 +130,11 @@
     }
   }
 
-  .table-price__title:nth-child(3) {
+  .table-price__title--hit {
     &::before {
-      content: "";
-      position: absolute;
-      left: -80px;
-      top: 14px;
-      transform: rotate(-45deg);
-      height: 20px;
-      width: 200px;
-      background-color: @color-purplish-red;
-    }
-
-    &::after {
-      content: "хит";
-      .font-config(400, 14px, 30px);
-      position: absolute;
       left: -80px;
       top: 10px;
-      transform: rotate(-45deg);
-      width: 200px;
-      text-align: center;
-      .font-config(400, 14px, 30px);
+      background-image: linear-gradient(to bottom, transparent 20%, @color-purplish-red 20% 85%, transparent 85%);
     }
   }
 
@@ -173,10 +143,7 @@
     color: @color-granite;
     border: 2px solid @color-light-gray;
     background-color: @color-white;
-    padding-top: 8px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 8px;
+    padding: 8px 15px;
     text-transform: none;
     width: 25%;
     min-width: 150px;
@@ -200,25 +167,9 @@
   .table-price__yes,
   .table-price__no {
     &::before {
-      content: "";
-      background-image: url("../img/icon-mark-yes.svg");
-      background-repeat: no-repeat;
-      position: absolute;
-      top: 0;
       left: 0;
       right: 0;
-      bottom: 0;
-      width: 31px;
-      height: 21px;
       margin: auto;
-    }
-  }
-
-  .table-price__no {
-    &::before {
-      background-image: url("../img/icon-mark-no.svg");
-      width: 27px;
-      height: 27px;
     }
   }
 }
@@ -230,15 +181,11 @@
     padding-bottom: 20px;
   }
 
-  .table-price__title:nth-child(3) {
+  .table-price__title--hit {
     &::before {
-      left: -69px;
-      height: 24px;
-    }
-
-    &::after {
-      left: -73px;
-      top: 15px;
+      left: -72px;
+      top: 14px;
+      background-image: linear-gradient(to bottom, transparent 12%, @color-purplish-red 12% 90%, transparent 90%);
     }
   }
 

@@ -22,6 +22,7 @@
 .price__box {
   width: calc(100% * 4 - 160px);
   margin-bottom: 42px;
+  transition: transform 0.3s ease-out;
 
   @-moz-document url-prefix("") {
     margin-bottom: 38px;
@@ -63,38 +64,38 @@
   }
 }
 
-#price-slide-1:checked ~ .price__control label[for="price-slide-1"],
-#price-slide-2:checked ~ .price__control label[for="price-slide-2"],
-#price-slide-3:checked ~ .price__control label[for="price-slide-3"] {
+.price__radio[id$="1"]:checked ~ .price__control label[for="price-slide-1"],
+.price__radio[id$="2"]:checked ~ .price__control label[for="price-slide-2"],
+.price__radio[id$="3"]:checked ~ .price__control label[for="price-slide-3"] {
   background-color: @color-white;
   border: 3px solid @color-granite;
 }
 
-#price-slide-1:checked ~ .price__box {
-  transform: translateX(-25%) translateX(20px);
+.price__radio[id$="1"]:checked ~ .price__box {
+  transform: translateX(calc(-25% + 20px));
 }
 
-#price-slide-2:checked ~ .price__box {
-  transform: translateX(-50%) translateX(20px);
+.price__radio[id$="2"]:checked ~ .price__box {
+  transform: translateX(calc(-50% + 20px));
 }
 
-#price-slide-3:checked ~ .price__box {
-  transform: translateX(-75%) translateX(20px);
+.price__radio[id$="3"]:checked ~ .price__box {
+  transform: translateX(calc(-75% + 20px));
 }
 
-#price-slide-1:checked ~ .price__box td:first-child {
+.price__radio[id$="1"]:checked ~ .price__box td:first-child {
   &::before {
     left: calc(100% + 25px);
   }
 }
 
-#price-slide-2:checked ~ .price__box td:first-child {
+.price__radio[id$="2"]:checked ~ .price__box td:first-child {
   &::before {
     left: calc(200% + 25px);
   }
 }
 
-#price-slide-3:checked ~ .price__box td:first-child {
+.price__radio[id$="3"]:checked ~ .price__box td:first-child {
   &::before {
     left: calc(300% + 25px);
   }
@@ -131,12 +132,11 @@
     width: calc(100% - 40px);
   }
 
-  #price-slide-1:checked ~ .price__box,
-  #price-slide-2:checked ~ .price__box,
-  #price-slide-3:checked ~ .price__box {
+  .price__radio[id$="1"]:checked ~ .price__box,
+  .price__radio[id$="2"]:checked ~ .price__box,
+  .price__radio[id$="3"]:checked ~ .price__box {
     transform: none;
   }
-
 
   .price__control {
     display: none;
