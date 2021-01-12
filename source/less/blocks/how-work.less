@@ -56,7 +56,8 @@
   margin-bottom: 0;
 }
 
-.how-work__item:not(:last-child) .how-work__image {
+.how-work__item:not(:last-child) .how-work__image,
+.how-work__item:not(:last-child) .how-work__image-group {
   display: none;
 }
 
@@ -181,13 +182,14 @@
       bottom: 0;
       left: -50px;
       z-index: 2;
-      background-image: url("../img/how-work-shadow.svg");
+      background-image: url("../img/icon-how-work-shadow.svg");
     }
   }
 
   .how-work__item .how-work__image,
   .how-work__item:last-child .how-work__image,
-  .how-work__item:not(:last-child) .how-work__image {
+  .how-work__item:not(:last-child) .how-work__image,
+  .how-work__item:not(:last-child) .how-work__image-group {
     position: relative;
     display: block;
     width: 186px;
