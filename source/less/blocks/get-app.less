@@ -1,39 +1,153 @@
 .get-app {
-  background-color: @color-sapphire-blue;
-}
+  display: grid;
+  padding-top: 25px;
+  grid-template-columns: 1fr repeat(2, minmax(auto, calc(@width-desktop / 2))) 1fr;
+  grid-template-rows: max-content minmax(285px, auto) max-content;
 
-.get-app_container {
-  min-height: 500px;
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/bg-look-life-differently-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-color: @color-granite;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    &::before {
+      background-image: url("../img/bg-look-life-differently-mobile@2x.jpg");
+    }
+  }
 }
 
 .get-app__title {
+  grid-column: ~"2/4";
+  grid-row: ~"1/2";
   color: @color-white;
   display: block;
   line-height: 28.8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 27px;
 }
 
 .get-app__download {
+  position: relative;
+  grid-column: ~"2/4";
+  grid-row: ~"5/6";
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+  &::before {
+    content: "";
+    width: 320px;
+    height: 286px;
+    background-image: url("../img/bg-pink-app-example-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    &::before {
+      background-image: url("../img/bg-pink-app-example-mobile@2x.png");
+    }
+  }
 }
 
 @media (min-width: @width-tablet) {
-  .get-app_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .get-app {
+    grid-template-columns: 1fr repeat(2, minmax(310px, calc(@width-desktop / 2))) 1fr;
+    grid-template-rows: auto;
+    padding-bottom: 74px;
+    padding-top: 95px;
+
+    &::before {
+      background-image: url("../img/bg-look-life-differently-tablet.jpg");
+    }
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      &::before {
+        background-image: url("../img/bg-look-life-differently-tablet@2x.jpg");
+      }
+    }
   }
 
   .get-app__title {
-    grid-column: ~"1/1";
     .font-config(300, 40px, 48px);
+    grid-column: ~"2/3";
+    padding-right: 10px;
+    margin-bottom: 0;
   }
 
   .get-app__download {
-    grid-column: ~"1/1";
+    grid-column: ~"2/3";
+    position: static;
+
+    &::before {
+      background-image: url("../img/bg-pink-app-example-tablet.png");
+      width: 660px;
+      height: 545px;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      &::before {
+        background-image: url("../img/bg-pink-app-example-tablet@2x.png");
+      }
+    }
   }
 }
 
 @media (min-width: @width-desktop) {
+  .get-app {
+    padding-top: 100px;
+    padding-bottom: 85px;
+
+    &::before {
+      background-image: url("../img/bg-look-life-differently-desktop.jpg");
+    }
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      &::before {
+        background-image: url("../img/bg-look-life-differently-desktop@2x.jpg");
+      }
+    }
+  }
+
   .get-app__title {
     .font-config(300, 50px, 68px);
+    margin-right: 170px;
+  }
+
+  .get-app__download {
+    margin-right: 170px;
+    padding-top: 40px;
+
+    &::before {
+      background-image: url("../img/bg-pink-app-example-desktop.png");
+      width: 911px;
+      height: 648px;
+      right: 25px;
+    }
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      &::before {
+        background-image: url("../img/bg-pink-app-example-desktop@2x.png");
+      }
+    }
   }
 }

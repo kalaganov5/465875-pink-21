@@ -1,14 +1,52 @@
 .app-download {
   background-color: @color-sapphire-blue;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .app-download__link {
-  .font-config(300; 20px; 20px);
+  .font-config(700; 18px; 18px);
   text-decoration: none;
   color: @color-white;
-  padding: 21px 38px;
+  padding: 15px 20px;
+  width: 100%;
+  max-width: 300px;
   display: inline-block;
   border: 3px solid @color-white;
   border-radius: 29px;
   box-sizing: border-box;
+  margin-bottom: 35px;
+
+  &:hover {
+    color: @color-purplish-red;
+    border-color: @color-white;
+    background-color: @color-white;
+  }
+
+  &:active {
+    color: rgba(@color-purplish-red, 30%);
+  }
+}
+
+@media (min-width: @width-tablet) {
+  .app-download {
+    background-color: transparent;
+    padding-right: 10px;
+  }
+
+  .app-download__link {
+    margin-bottom: 48px;
+  }
+}
+
+@media (min-width: @width-desktop) {
+  .app-download {
+    padding-right: 0;
+    padding-left: 10px;
+  }
+
+  .app-download__link {
+    .font-config(700, 21px, 18px);
+    margin-bottom: 70px;
+  }
 }
