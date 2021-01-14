@@ -1,0 +1,31 @@
+.page-inner {
+  display: grid;
+  grid-template-columns: minmax(20px, auto) repeat(2, minmax(auto, calc(@width-desktop / 2))) minmax(20px, auto);
+  grid-template-rows: max-content minmax(28px, auto) max-content;
+  padding-top: 11px;
+  
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/bg-look-life-differently-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-color: @color-granite;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    &::before {
+      background-image: url("../img/bg-look-life-differently-mobile@2x.jpg");
+    }
+  }
+}
+
+.page-inner__title {
+  grid-column: ~"2/4";
+  color: @color-white;
+}
