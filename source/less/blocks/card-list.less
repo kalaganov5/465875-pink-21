@@ -9,7 +9,7 @@
 
 .card-list__item--primary .card-list__image {
   object-fit: cover;
-  .full-width-in-limited;
+  .full-width-in-limited-container;
 }
 
 .card-list__image {
@@ -47,10 +47,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-  }
 
-  .card-list__item--primary {
-    grid-column: ~"1/-1";
+    &--primary {
+      grid-column: ~"1/-1";
+    }
   }
 }
 

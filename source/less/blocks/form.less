@@ -325,6 +325,10 @@
 
   .form__full-name {
     order: 1;
+
+    @-moz-document url-prefix("") {
+      margin-bottom: 7px;
+    }
   }
 
   .form__full-name .form__item {
@@ -351,6 +355,11 @@
     border-radius: 1px;
     grid-column: ~"2/4";
     margin-bottom: 30px;
+
+    @-moz-document url-prefix("") {
+      padding-top: 57px;
+      margin-bottom: 38px;
+    }
   }
 
   .form__travel .form__list {
@@ -374,6 +383,10 @@
     border-radius: 1px;
     grid-column: ~"2/4";
     margin-bottom: 43px;
+
+    @-moz-document url-prefix("") {
+      padding-top: 55px;
+    }
   }
 
   .form__achievements .form__group-title {
@@ -398,6 +411,11 @@
     border-radius: 1px;
     padding: 25px 58px;
     margin: 5px 0 35px 0;
+
+    @-moz-document url-prefix("") {
+      padding-top: 42px;
+      margin-bottom: 45px;
+    }
   }
 
   .form__contact .form__group-title {
@@ -448,6 +466,24 @@
   .form__desc {
     margin-top: 20px;
   }
+
+  .form fieldset {
+    @-moz-document url-prefix("") {
+      position: relative;
+    }
+  }
+
+  .form .form__group-title {
+    @-moz-document url-prefix("") {
+      position: absolute;
+      background-color: white;
+      left: 50%;
+      transform: translate(-50%, 0);
+      top: -11px;
+      width: max-content;
+      margin-bottom: 0;
+    }
+  }
 }
 
 @media (min-width: @width-desktop) {
@@ -465,6 +501,10 @@
   .form__travel {
     grid-column: ~"3/4";
     margin-left: 45px;
+
+    @-moz-document url-prefix("") {
+      margin-top: 6px;
+    }
   }
 
   .form__travel .form__list {
@@ -508,6 +548,10 @@
     padding-top: 47px;
     padding-bottom: 7px;
     margin-bottom: 40px;
+
+    @-moz-document url-prefix("") {
+      padding-top: 55px;
+    }
   }
 
   .form__achievements .form__list {
