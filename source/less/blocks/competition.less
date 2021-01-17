@@ -2,19 +2,8 @@
   margin-bottom: 30px;
 }
 
-.competition__headline {
-  background-color: @color-granite;
-  display: grid;
-  grid-template-columns: 1fr minmax(auto, @width-desktop) 1fr;
-  grid-template-rows: minmax(auto, 300px);
-  align-items: center;
-}
-
-.competition__title {
-  color: @color-white;
-  grid-column: ~"2/3";
-  padding-left: 20px;
-  padding-right: 20px;
+.competition__wrapper {
+  padding-top: 30px;
 }
 
 .competition__subtitle {
@@ -24,23 +13,26 @@
 }
 
 .competition__appeal,
-.competition__subtitle br {
+.competition__break,
+.competition__break--tablet,
+.competition__break--desktop {
   display: none;
 }
 
 .competition__form {
   display: grid;
-  grid-template-columns: 1fr minmax(auto, @width-desktop / 2) minmax(auto, @width-desktop / 2) 1fr;
+  grid-template-columns: minmax(20px, auto) minmax(auto, @width-desktop / 2) minmax(auto, @width-desktop / 2) minmax(20px, auto);
+  padding-top: 22px;
+  row-gap: 25px;
 }
 
 @media (min-width: @width-tablet) {
-  .competition__form {
-    margin-left: 20px;
-    margin-right: 20px;
+  .competition__wrapper {
+    padding-top: 73px;
   }
 
-  .competition__title {
-    .font-config(300, 50px, 68px);
+  .competition__form {
+    padding-top: 56px;
   }
 
   .competition__subtitle {
@@ -48,13 +40,26 @@
   }
 
   .competition__appeal,
-  .competition__subtitle br {
+  .competition__break {
+    display: inline;
+  }
+
+  .competition__break--tablet {
     display: inline;
   }
 }
 
 @media (min-width: @width-desktop) {
-  .competition__subtitle br {
+  .competition__form {
+    grid-template-columns: minmax(10px, auto) minmax(auto, 480px) minmax(auto, 480px) minmax(10px, auto);
+  }
+
+  .competition__break,
+  .competition__break--tablet {
     display: none;
+  }
+
+  .competition__break--desktop {
+    display: inline;
   }
 }
