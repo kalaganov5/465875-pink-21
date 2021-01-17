@@ -8,7 +8,7 @@
   background-color: @color-white;
   text-align: center;
   box-shadow: 0 4px 4px fade(@color-black, 25%);
-  max-width: 780px;
+  max-width: 460px;
   width: 100%;
   border-radius: 0 0 1px 1px;
   padding: 40px 0 50px;
@@ -73,4 +73,27 @@
 
 .popup-form__button {
   min-width: 280px;
+}
+
+@media (min-width: @width-tablet) {
+  .popup-form__title {
+    .font-config(700, 30px, 40px);
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 10px;
+  }
+
+  .popup-form__desc {
+    .font-config(400, 18px, 24px);
+    margin-left: 65px;
+    margin-right: 65px;
+  }
+
+  .popup-form__button {
+    min-width: 300px;
+  }
+
+  .popup-form__error .popup-form__button {
+    margin-top: -10px;
+  }
 }
