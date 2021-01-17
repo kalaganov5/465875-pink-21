@@ -18,12 +18,11 @@
     content: attr(data-text);
     position: absolute;
     width: calc(100% - 95px);
-    height: 100%;
-    top: 0;
+    height: 50%;
     left: calc(200% + 15px);
     z-index: 10;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    display: inline-block;
+    vertical-align: middle;
   }
 
   &::after {
@@ -43,14 +42,11 @@
   background-color: @color-granite;
   color: @color-white;
   text-transform: uppercase;
-  padding: 12px 15px 30px 15px;
+  padding: 0 15px 13px;
+  height: 97px;
   position: relative;
   overflow: hidden;
   z-index: -1;
-
-  @-moz-document url-prefix("") {
-    padding: 12px 15px 28px 15px;
-  }
 }
 
 .table-price__title:nth-child(2) {
@@ -80,7 +76,8 @@
   color: @color-granite;
   border: 2px solid @color-light-gray;
   background-color: @color-white;
-  padding: 15px;
+  padding: 0 15px;
+  height: 60px;
   text-transform: uppercase;
   position: relative;
   z-index: -2;
@@ -88,7 +85,6 @@
 }
 
 .table-price__title-small {
-
   .font-config(300, 18px, 30px);
   margin-top: -3px;
 }
@@ -120,14 +116,11 @@
     background-color: @color-granite;
     color: @color-white;
     text-transform: uppercase;
-    padding: 14px 15px 8px;
+    padding: 7px 15px 0;
+    height: 78px;
     position: relative;
     overflow: hidden;
     z-index: -1;
-
-    @-moz-document url-prefix("") {
-      padding-top: 12px;
-    }
   }
 
   .table-price__title--hit {
@@ -143,7 +136,8 @@
     color: @color-granite;
     border: 2px solid @color-light-gray;
     background-color: @color-white;
-    padding: 8px 15px;
+    padding: 0 15px;
+    height: 47px;
     text-transform: none;
     width: 25%;
     min-width: 150px;
@@ -177,8 +171,8 @@
 @media (min-width: @width-desktop) {
   .table-price__title {
     font-size: 18px;
-    padding-top: 16px;
-    padding-bottom: 20px;
+    height: 97px;
+    padding-top: 0;
   }
 
   .table-price__title--hit {
@@ -196,12 +190,7 @@
 
   .table-price__body td {
     font-size: 18px;
-    padding-top: 16px;
     padding-left: 20px;
-    padding-bottom: 15px;
-
-    @-moz-document url-prefix("") {
-      padding-top: 15px;
-    }
+    height: 61px;
   }
 }
