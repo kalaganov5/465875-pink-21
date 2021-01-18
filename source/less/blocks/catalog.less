@@ -54,3 +54,26 @@
     margin-bottom: 25px;
   }
 }
+
+@media(min-width: @width-desktop) {
+  .catalog {
+    margin-bottom: 0;
+  }
+  .catalog__subtitle--break {
+    display: inline;
+  }
+
+  .catalog .container {
+    margin-bottom: 87px;
+  }
+
+  .post--primary .post__image-box {
+    &::before {
+      top: 54px;
+    }
+  }
+
+  .catalog .catalog__list {
+    margin-bottom: 0;
+  }
+}

@@ -24,7 +24,7 @@
           @media ( min-width: 960px) {
             HTML {
               /* Desktop layout */
-              background-image: url( "pixel-glass/previews/960-form.png" );
+              background-image: url( "pixel-glass/previews/960-catalog.png" );
             }
           }
         </style>
@@ -301,8 +301,8 @@
                   <use xlink:href="#icon-crop"></use>
                 </svg>
               </button>
-              <label><span class="visually-hidden">Инструмент обрезка</span>
-                <input class="form-share__range" type="range" min="0" max="10" step="1" value="8" name="crop-level">
+              <label class="form-share__range-box"><span class="visually-hidden">Инструмент обрезка</span>
+                <input class="form-share__range" type="range" min="0" max="100" step="1" value="83" name="crop-level">
               </label>
             </li>
             <li class="form-share__item">
@@ -311,8 +311,8 @@
                   <use xlink:href="#icon-fill"></use>
                 </svg>
               </button>
-              <label><span class="visually-hidden">Заливка</span>
-                <input class="form-share__range" type="range" min="0" max="10" step="1" value="1" name="fill-level">
+              <label class="form-share__range-box"><span class="visually-hidden">Заливка</span>
+                <input class="form-share__range" type="range" min="0" max="100" step="1" value="14" name="fill-level">
               </label>
             </li>
             <li class="form-share__item">
@@ -321,15 +321,11 @@
                   <use xlink:href="#icon-contrast"></use>
                 </svg>
               </button>
-              <label><span class="visually-hidden">Контрастность</span>
-                <input class="form-share__range" type="range" min="0" max="10" step="1" value="5" name="contrast-level">
+              <label class="form-share__range-box"><span class="visually-hidden">Контрастность</span>
+                <input class="form-share__range" type="range" min="0" max="100" step="1" value="50" name="contrast-level">
               </label>
             </li>
           </ul>
-          <div class="form-share__control">
-            <label for="range-control">Уровень</label>
-            <input class="form-share__range form-share__range--universal" type="range" min="0" max="100" step="1" value="85" name="effect-level" id="range-control">
-          </div>
           <button class="form-share__submit" type="submit">Запостить</button>
           <button class="form-share__reset" type="reset">Отмена</button>
         </form>
