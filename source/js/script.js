@@ -23,10 +23,19 @@ document.addEventListener("DOMContentLoaded", function() {
   let submitForm = document.querySelector(".competition__form ");
   let popup = document.querySelector(".popup-form");
   let popupClose = document.querySelectorAll(".popup-form__button");
+  let buttonSubmit = document.querySelector(".form__submit");
+
+  buttonSubmit.onclick = function(evt) {
+    if(submitForm.checkValidity() === false) {
+      evt.preventDefault();
+      popup.classList.add("popup-form--active-form-error");
+    }
+  }
 
   submitForm.onsubmit = function (evt) {
     evt.preventDefault();
     popup.classList.add("popup-form--active-form-send");
+    submitForm.reset()
   };
 
   for (let i = 0; i <= popupClose.length; i++) {
@@ -34,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
       evt.preventDefault();
       if (popup.classList.contains("popup-form--active-form-error")) {
         popup.classList.remove("popup-form--active-form-error");
+        submitForm.reportValidity()
       }
       if (popup.classList.contains("popup-form--active-form-send")) {
         popup.classList.remove("popup-form--active-form-send");
