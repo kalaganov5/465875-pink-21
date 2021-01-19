@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
   submitForm.onsubmit = function (evt) {
     evt.preventDefault();
     popup.classList.add("popup-form--active-form-send");
-  }
+  };
 
   for (let i = 0; i <= popupClose.length; i++) {
     popupClose[i].onclick = function(evt) {
@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", function() {
       if (popup.classList.contains("popup-form--active-form-send")) {
         popup.classList.remove("popup-form--active-form-send");
       }
-    }
-  };
+    };
+  }
 });
 
 

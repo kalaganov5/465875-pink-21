@@ -7,55 +7,17 @@
   margin-right: auto;
 }
 
-.card-list__item--primary .card-list__image {
-  object-fit: cover;
-  .full-width-in-limited-container;
-}
-
-.card-list__image {
-  width: 100%;
-  object-fit: cover;
-}
-
-.card-list__content {
-  background-color: @color-smoky-white;
-}
-
-.card-list__user-name {
-  .font-config(700, 14px, 24px);
-  color: @color-granite;
-}
-
-.card-list__time {
-  .font-config(300, 12px, 24px);
-  text-transform: uppercase;
-}
-
-.card-list__comment {
-  .font-config(400, 14px, 24px);
-  color: @color-granite;
-}
-
-.card-list__like {
-  .font-config(400, 12px, 24px);
-  color: @color-purplish-red;
-  text-transform: uppercase;
-}
-
 @media (min-width: @width-tablet) {
   .card-list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-
-    &--primary {
-      grid-column: ~"1/-1";
-    }
+    grid-template-columns: minmax(20px, auto) 1fr 1fr minmax(20px, auto);
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 @media (min-width: @width-desktop) {
   .card-list {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: minmax(10px, auto) repeat(3, 1fr) minmax(10px, auto);
   }
 }
