@@ -29,7 +29,6 @@
 }
 
 .post__image {
-  width: 100%;
   object-fit: cover;
   background-color: @color-light-gray;
   display: block;
@@ -140,7 +139,6 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-
   }
 
   .post--primary .post__like-button {
@@ -156,9 +154,6 @@
   .post__content {
     padding: 21px 30px 24px 30px;
     min-height: 155px;
-  }
-
-  .post__content {
     display: flex;
     flex-direction: column;
   }
@@ -183,7 +178,6 @@
   .post__like-button {
     margin-right: 0;
   }
-
 }
 
 @media (min-width: @width-desktop) {
@@ -200,6 +194,7 @@
       top: 54px;
     }
   }
+
   .post--primary .post__content {
     padding-left: 26px;
     padding-top: 24px;

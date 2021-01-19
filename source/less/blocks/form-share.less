@@ -151,11 +151,10 @@
 
 .form-share__range {
   width: 100%;
-  -webkit-appearance: none;
+  appearance: none;
 
   &:focus {
     outline: 1px solid inherit;
-
   }
 
   &::-webkit-slider-runnable-track {
@@ -171,7 +170,7 @@
     border-radius: 7px;
     background: @color-white;
     cursor: pointer;
-    -webkit-appearance: none;
+    appearance: none;
     margin-top: 6px;
   }
 
@@ -188,8 +187,7 @@
     width: 12px;
     border-radius: 100%;
     background: @color-white;
-    cursor: pointer;
-    -webkit-appearance: none;
+    appearance: none;
     margin-top: -6px;
   }
 }
@@ -290,7 +288,7 @@
     margin-bottom: 26px;
     margin-left: 35px;
     margin-right: 15px;
-    padding: 0px 30px;
+    padding: 0 30px;
   }
 
   .form-share__reset {
@@ -298,7 +296,7 @@
     margin-bottom: 20px;
     margin-left: 35px;
     margin-right: 15px;
-    padding: 0px 30px;
+    padding: 0 30px;
   }
 }
 
@@ -310,10 +308,8 @@
   }
 
   .form-share {
-    grid-template-areas:
-    "image image tools tools"
-    "image image . ."
-    "image image submit-button reset-button";
+    grid-template-areas: "image image tools tools"
+      "image image submit-button reset-button";
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: max-content min-content auto;
     padding-bottom: 37px;
@@ -341,6 +337,7 @@
     width: 48px;
     height: 43px;
   }
+
   .form-share__contrast .form-share__icon {
     width: 32px;
     height: 32px;
