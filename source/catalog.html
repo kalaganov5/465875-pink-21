@@ -96,17 +96,19 @@
     </header>
     <main class="page-main">
       <section class="catalog">
-        <div class="container">
+        <div class="catalog__container container">
           <p class="catalog__subtitle">Взгляните на фотографии, которые выкладывают пользователи! <br class="catalog__subtitle--break">Видите, как не хватает ваших?</p>
         </div>
         <ul class="catalog__list card-list">
           <li class="card-list__item post post--primary">
             <a class="post__full-size-image" href="#">
               <picture class="post__image-box">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/bridge-desktop.webp 1x, img/bridge-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/bridge-tablet.webp 1x, img/bridge-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/bridge-mobile.webp 1x, img/bridge-mobile@2x.webp 2x">
                 <source media="(min-width: 960px)" srcset="img/bridge-desktop.jpg 1x, img/bridge-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/bridge-tablet.jpg 1x, img/bridge-tablet@2x.jpg 2x">
-                <source srcset="img/bridge-mobile.jpg 1x, img/bridge-mobile@2x.jpg 2x">
-                <img class="post__image" src="img/bridge-mobile.jpg" alt="Вид на реку с моста" width="320" height="137"/>
+                <img class="post__image" src="img/bridge-mobile.jpg" srcset="img/bridge-mobile@2x.jpg 2x" alt="Вид на реку с моста" width="320" height="137"/>
               </picture>
             </a>
             <div class="post__content">
@@ -125,10 +127,12 @@
           <li class="card-list__item post">
             <a class="post__full-size-image" href="#">
               <picture class="post__image-box">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/white-car-desktop.webp 1x, img/white-car-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/white-car-tablet.webp 1x, img/white-car-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/white-car-mobile.webp 1x, img/white-car-mobile@2x.webp 2x">
                 <source media="(min-width: 960px)" srcset="img/white-car-desktop.jpg 1x, img/white-car-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/white-car-tablet.jpg 1x, img/white-car-tablet@2x.jpg 2x">
-                <source srcset="img/white-car-mobile.jpg 1x, img/white-car-mobile@2x.jpg 2x">
-                <img class="post__image" src="img/white-car-mobile.jpg" alt="Белый автомобиль под объективом" width="280" height="180"/>
+                <img class="post__image" src="img/white-car-mobile.jpg" srcset="img/white-car-mobile@2x.jpg 2x" alt="Белый автомобиль под объективом" width="280" height="180"/>
               </picture>
             </a>
             <div class="post__content">
@@ -147,10 +151,12 @@
           <li class="card-list__item post">
             <a class="post__full-size-image" href="#">
               <picture class="post__image-box">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/drums-desktop.webp 1x, img/drums-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/drums-tablet.webp 1x, img/drums-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/drums-mobile.webp 1x, img/drums-mobile@2x.webp 2x">
                 <source media="(min-width: 960px)" srcset="img/drums-desktop.jpg 1x, img/drums-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/drums-tablet.jpg 1x, img/drums-tablet@2x.jpg 2x">
-                <source srcset="img/drums-mobile.jpg 1x, img/drums-mobile@2x.jpg 2x">
-                <img class="post__image" src="img/drums-mobile.jpg" alt="Установка барабанщика" width="280" height="180"/>
+                <img class="post__image" src="img/drums-mobile.jpg" srcset="img/drums-mobile@2x.jpg 2x" alt="Установка барабанщика" width="280" height="180"/>
               </picture>
             </a>
             <div class="post__content">
@@ -169,10 +175,12 @@
           <li class="card-list__item post">
             <a class="post__full-size-image" href="#">
               <picture class="post__image-box">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/tower-desktop.webp 1x, img/tower-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/tower-tablet.webp 1x, img/tower-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/tower-mobile.webp 1x, img/tower-mobile@2x.webp 2x">
                 <source media="(min-width: 960px)" srcset="img/tower-desktop.jpg 1x, img/tower-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/tower-tablet.jpg 1x, img/tower-tablet@2x.jpg 2x">
-                <source srcset="img/tower-mobile.jpg 1x, img/tower-mobile@2x.jpg 2x">
-                <img class="post__image" src="img/tower-mobile.jpg" alt="Вид на небоскребы снизу" width="280" height="180"/>
+                <img class="post__image" src="img/tower-mobile.jpg" srcset="img/tower-mobile@2x.jpg 2x" alt="Вид на небоскребы снизу" width="280" height="180"/>
               </picture>
             </a>
             <div class="post__content">
@@ -191,10 +199,12 @@
           <li class="card-list__item post">
             <a class="post__full-size-image" href="#">
               <picture class="post__image-box">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/street-market-desktop.webp 1x, img/street-market-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/street-market-tablet.webp 1x, img/street-market-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/street-market-mobile.webp 1x, img/street-market-mobile@2x.webp 2x">
                 <source media="(min-width: 960px)" srcset="img/street-market-desktop.jpg 1x, img/street-market-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/street-market-tablet.jpg 1x, img/street-market-tablet@2x.jpg 2x">
-                <source srcset="img/street-market-mobile.jpg 1x, img/street-market-mobile@2x.jpg 2x">
-                <img class="post__image" src="img/street-market-mobile.jpg" alt="Ярмарка кубанская бахча" width="280" height="180"/>
+                <img class="post__image" src="img/street-market-mobile.jpg" srcset="img/street-market-mobile@2x.jpg 2x" alt="Ярмарка кубанская бахча" width="280" height="180"/>
               </picture>
             </a>
             <div class="post__content">
@@ -213,10 +223,12 @@
           <li class="card-list__item post">
             <a class="post__full-size-image" href="#">
               <picture class="post__image-box">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/mount-desktop.webp 1x, img/mount-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/mount-tablet.webp 1x, img/mount-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/mount-mobile.webp 1x, img/mount-mobile@2x.webp 2x">
                 <source media="(min-width: 960px)" srcset="img/mount-desktop.jpg 1x, img/mount-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/mount-tablet.jpg 1x, img/mount-tablet@2x.jpg 2x">
-                <source srcset="img/mount-mobile.jpg 1x, img/mount-mobile@2x.jpg 2x">
-                <img class="post__image" src="img/mount-mobile.jpg" alt="Путешественник сидит на горе и смотрит вниз" width="280" height="180"/>
+                <img class="post__image" src="img/mount-mobile.jpg" srcset="img/mount-mobile@2x.jpg 2x" alt="Путешественник сидит на горе и смотрит вниз" width="280" height="180"/>
               </picture>
             </a>
             <div class="post__content">
@@ -235,10 +247,12 @@
           <li class="card-list__item post">
             <a class="post__full-size-image" href="#">
               <picture class="post__image-box">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/airplane-wing-desktop.webp 1x, img/airplane-wing-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/airplane-wing-tablet.webp 1x, img/airplane-wing-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/airplane-wing-mobile.webp 1x, img/airplane-wing-mobile@2x.webp 2x">
                 <source media="(min-width: 960px)" srcset="img/airplane-wing-desktop.jpg 1x, img/airplane-wing-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/airplane-wing-tablet.jpg 1x, img/airplane-wing-tablet@2x.jpg 2x">
-                <source srcset="img/airplane-wing-mobile.jpg 1x, img/airplane-wing-mobile@2x.jpg 2x">
-                <img class="post__image" src="img/airplane-wing-mobile.jpg" alt="Крылья самолета на фоне яркого солнца" width="280" height="180"/>
+                <img class="post__image" src="img/airplane-wing-mobile.jpg" srcset="img/airplane-wing-mobile@2x.jpg 2x" alt="Крылья самолета на фоне яркого солнца" width="280" height="180"/>
               </picture>
             </a>
             <div class="post__content">
@@ -261,10 +275,12 @@
         <form class="share__form form-share" action="https://echo.htmlacademy.ru" method="GET">
           <div class="form-share__user-upload">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/editor-desktop.webp 1x, img/editor-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/editor-tablet.webp 1x, img/editor-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/editor-mobile.webp 1x, img/editor-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="img/editor-desktop.jpg 1x, img/editor-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/editor-tablet.jpg 1x, img/editor-tablet@2x.jpg 2x">
-              <source srcset="img/editor-mobile.jpg 1x, img/editor-mobile@2x.jpg 2x">
-              <img class="form-share__image" src="img/editor-mobile.jpg" alt="Лесная дорога зимой" width="280" height="374"/>
+              <img class="form-share__image" src="img/editor-mobile.jpg" srcset="img/editor-mobile@2x.jpg 2x" alt="Лесная дорога зимой" width="280" height="374"/>
             </picture>
           </div>
           <ul class="form-share__list">
