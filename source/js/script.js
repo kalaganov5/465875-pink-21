@@ -6,7 +6,7 @@ let menuClosed = document.querySelector(".page-header__nav--closed");
 let header = document.querySelector(".page-header");
 
 // show .page-header__toggle only support js
-menuToggleButton.classList.add("support-js");
+menuToggleButton.classList.add("page-header--support-js");
 
 // hide menu with support js
 header.classList.add("page-header--closed");
