@@ -2,6 +2,7 @@
 
 * Студент: [Володя Калаганов](https://up.htmlacademy.ru/adaptive/21/user/465875).
 * Наставник: [Никита Победоносцев](https://htmlacademy.ru/profile/nikkypizza).
+* Посмотреть [сайт](https://kalaganov5.github.io/465875-pink-21/)
 
 ---
 
